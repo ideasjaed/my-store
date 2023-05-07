@@ -6,6 +6,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  imgParent= '';
   name = 'Jaz';
   age = 30;
   img = 'https://cdn.pixabay.com/photo/2023/04/13/02/20/waterfall-7921517_1280.jpg'
@@ -76,4 +77,7 @@ export class AppComponent {
     this.names.splice(index, 1);
   }
 
+  onLoaded(img: string) {
+    console.log('loading padre', img);
+  }
 }
