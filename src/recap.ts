@@ -11,3 +11,5 @@ class Person {
 }
 
 const jaz = new Person(30, 'Lino');
+console.log(username);
+
